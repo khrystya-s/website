@@ -1,0 +1,203 @@
+body, main{
+    margin: 0;
+}
+
+.navigation{
+    background-color: #B5BD89;
+}
+
+.main-info{
+    margin-top: 1rem;
+}
+
+@font-face {
+	font-family: "SplandorC";
+	src: url('../fonts/SplendorC.ttf');
+}
+
+@font-face {
+	font-family: "Adigiana_Extreme";
+	src: url('../fonts/Adigiana_Extreme.ttf');
+}
+
+@font-face {
+	font-family: "Adelina_Cursive";
+	src: url('../fonts/Adelina_Cursive.ttf');
+}
+
+
+.main-info-header{
+    font-family: "SplandorC";
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.splandor{
+    font-family: "SplandorC";
+}
+
+.adigiana{
+    font-family: "Adigiana_Extreme";
+}
+
+.adelina{
+    font-family: "Adelina_Cursive";
+}
+
+.logo{
+    width: 55px;
+    height: auto;
+}
+
+.navbar-brand{
+    font-size: 24px;
+}
+
+.carousel-caption{
+    color:#222;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: -1.5rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #B5BD89;
+}
+
+.carousel-header{
+    font-size: 48px;
+}
+
+.carousel-desc{
+    font-size: 24px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2394AE95'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2394AE95'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.main-info-header{
+    font-size: 48px;
+}
+/* https://coolors.co/729ea1-94ae95-b5bd89-cabe91-dfbe99-e6a896-ec9192-e47284-db5375 */
+.sale-timer {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+#countdown div {
+  background: #ffe8b5;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#countdown span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d14a00;
+}
+
+#countdown p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.toy-random{
+    background-color: #EC9192;
+}
+
+.card-body{
+    background-color: #ffe8b5;
+}
+
+.card-footer{
+    background-color: #DFBE99;
+}
+
+.btn-toy-random{
+    background-color: #DB5375;
+    border-color: #DB5375;
+}
+:hover.btn-toy-random{
+    background-color: #E47284 !important;
+    border-color: #E47284 !important; 
+}
+:active.btn-toy-random{
+    background-color: #DB5375 !important;
+    border-color: #DB5375 !important;
+}
+.btn-toy-link{
+    background-color: #DB5375 !important;
+    border-color: #DB5375 !important;
+    color: #fff !important;
+}
+:hover.btn-toy-link{
+    background-color: #E47284 !important;
+    border-color: #E47284 !important; 
+}
+:active.btn-toy-link{
+    background-color: #DB5375 !important;
+    border-color: #DB5375 !important;
+}
+.foot{
+    background-color: #B5BD89 !important;
+}
+
+.cart-popup {
+    position: fixed; /* Фіксує вікно відносно екрану */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center;     /* Центрування по вертикалі */
+    z-index: 9999;           /* Щоб було поверх усього */
+}
+
+.cart-popup-inner {
+    background: #fff;
+    padding: 20px;
+    width: 360px;            /* Ширина вікна */
+    max-height: 80vh;        /* Максимальна висота */
+    overflow-y: auto;        /* Прокрутка, якщо товарів багато */
+    border-radius: 12px;     /* Закруглені кути */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+/* Стиль кнопки закриття всередині кошика */
+.cart-popup-inner .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.cart-popup-inner .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.footer-logo{
+    color: #222 !important;
+}
